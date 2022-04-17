@@ -24,22 +24,63 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 0 150px;
 }
 
 #header_logo {
     color: var(--header_logo_fg);
     font-size: var(--header_logo_size);
     font-weight: 900;
+    flex-grow: 1;
+}
+
+nav {
+    flex-grow: 0.2;
 }
 
 #header_links {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .nav_link {
     text-decoration: none;
     color: var(--hero_second_fg);
+}
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    padding: 0 150px;
+    align-items: center;
+
+    background-color: var(--dark_bg);
+}
+
+#intro_left,
+#intro_right {
+    flex: 1 1 0px;
+}
+
+h1 {
+    color: var(--hero_main_fg);
+    font-size: 48px;
+}
+
+#intro_left p {
+    color: var(--hero_second_fg);
+    font-size: 18px;
+}
+
+#intro_left button {
+    background-color: var(--button_color);
+    color: var(--hero_main_fg);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 6px 25px;
+    border: 1px solid var(--button_color);
+    border-radius: 5px;
 }
